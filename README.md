@@ -1,16 +1,16 @@
-function  func ( s ,  a ,  b )  {
-  if  ( ! s )  return  - 1 ;
+function func(s, a, b) {
+  if (!s) return -1;
 
-  const  aIndex  =  s . lastIndexOf ( a ) ;
-  const  bIndex  =  s . lastIndexOf ( b ) ;
+  const aIndex = s.lastIndexOf(a);
+  const bIndex = s.lastIndexOf(b);
 
-  if  ( aIndex  ==  bIndex )  return  - 1 ;
+  if (aIndex == bIndex) return -1;
 
-  const  maxIndex  =  Math . max ( aIndex ,  bIndex ) ;
+  const maxIndex = Math.max(aIndex, bIndex);
 
-  if  ( maxIndex  ==  s . length )  {
-    вернуться  Math . min ( aIndex ,  bIndex ) ;
+  if (maxIndex == s.length) {
+    return Math.min(aIndex, bIndex);
   }
 
-  вернуть  maxIndex ;
+  return maxIndex;
 }
