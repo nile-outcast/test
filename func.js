@@ -4,7 +4,9 @@ function func(s, a, b) {
   const aIndex = s.lastIndexOf(a);
   const bIndex = s.lastIndexOf(b);
 
-  if (aIndex == bIndex) return -1;
+  if (aIndex == s.length && bIndex == s.length) {
+    return -1;
+  }
 
   const maxIndex = Math.max(aIndex, bIndex);
 
